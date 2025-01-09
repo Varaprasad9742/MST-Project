@@ -1,0 +1,482 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+
+.navbar nav a:hover {
+    background-color: #ddd;
+    color: #333;
+    border-radius: 5px;
+}
+
+
+
+/* Hero section with background image */
+.hero {
+    background: url('araku.jpg') center/cover no-repeat;
+    background-color: rgba(14, 13, 13, 0.5); /* Temporary fallback */
+    color: rgb(245, 241, 241);
+    text-align: center;
+    padding: 0; /* Remove padding to let the background cover the full screen */
+    height: 100vh; /* Makes the hero section cover the full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-weight: lighter;
+}
+
+.hero .btn-primary {
+    background-color: #f36f6f;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn-primary:hover {
+    background-color: #e65c5c;
+}
+/* Featured Destinations Section */
+.featured-destinations {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.featured-destinations h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* Destinations container - Single Line Layout */
+.destinations-container {
+    display: flex; /* Horizontal layout */
+    justify-content: space-between; /* Distribute boxes evenly */
+    gap: 20px; /* Space between the boxes */
+}
+
+/* Individual destination box */
+.destination {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 22%; /* Adjusted width to fit four boxes in a row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+
+.destination img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.destination p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Learn More button */
+.btn-secondary {
+    background-color: #f36f6f;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #e65c5c;
+}
+/* Business Portal Preview Section */
+.business-portal-preview {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.business-portal-preview h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.business-portal-preview p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.business-portal-preview .btn-secondary {
+    background-color: #f36f6f;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.business-portal-preview .btn-secondary:hover {
+    background-color: #e65c5c;
+}
+
+
+/* Hero section */
+.hero {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.hero .btn-primary {
+    background-color: #f36f6f;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.hero .btn-primary:hover {
+    background-color: #e65c5c;
+}
+
+/* Featured Destinations */
+.featured-destinations {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-destinations h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.destination-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.destination-cards .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.destination-cards .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.destination-cards .card p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.destination-cards .card a {
+    color: #f36f6f;
+    text-decoration: none;
+}
+
+.destination-cards .card a:hover {
+    text-decoration: underline;
+}
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+}
+
+.feature h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #555;
+}
+/* Footer Section */
+footer a {
+    color: #f36f6f; /* Match button or brand color */
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Booking Form */
+/* Booking Form Section */
+.booking-form-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgb(218, 241, 243); /* Light blue background */
+    border: 1px solid #cce7ff; /* Light blue border for compartment */
+    border-radius: 10px; /* Rounded corners for compartment */
+    margin: 40px auto; /* Adds spacing around the section */
+    max-width: 700px; /* Limits width for better readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+}
+
+.booking-form-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Booking Form Styles */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.booking-form label {
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.booking-form .btn-primary {
+    background-color: #ea3c0b; /* Complementary blue button */
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form .btn-primary:hover {
+    background-color: #10a5fb; /* Darker blue on hover */
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+/* Destination Details */
+.destination-detail {
+    background-color: rgb(218, 241, 243);
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.destination-detail h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.destination-detail img {
+    width: 40%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.destination-detail p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.destination-detail .btn-primary {
+    background-color: #eb4c4c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.destination-detail .btn-primary:hover {
+    background-color: #f02626;
+}
+
+/* Business Portal */
+/* Business Registration Form Section */
+.business-registration {
+    padding: 40px 20px;
+    background-color: #eaf7ff; /* Light blue */
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    max-width: 900px; /* Limit the width like in the booking page */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header text styling */
+.business-registration h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration-form .form-group {
+    width: 100%;
+    max-width: 500px; /* Limit the width of the form inputs */
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.registration-form button {
+    background-color: #f02626;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+   
+}
